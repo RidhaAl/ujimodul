@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(135deg, #aaa7a7, #007BFF); /* Biru muda dan Abu-abu */
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%; /* Flexibly sized */
+    cursor: pointer; /* Indicate clickability */
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.2); /* Change background on hover */
+}
+
+.logo {
+    width: 50px; /* Size of the logo */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.menu-text {
+    font-size: 18px; /* Font size for the menu text */
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        width: 90%; /* Resize for smaller screens */
+    }
+
+    .logo {
+        width: 40px; /* Adjust logo size for smaller screens */
+    }
+
+    .menu-text {
+        font-size: 16px; /* Slightly smaller text for mobile */
+    }
+}

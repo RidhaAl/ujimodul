@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #aaa7a7, #007BFF); /* Biru muda dan Abu-abu */
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(241, 237, 237, 0.7);
+    font-family: 'Open Sans';
+}
+
+img {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #add8e6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+}
